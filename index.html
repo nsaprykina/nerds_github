@@ -60,9 +60,9 @@
                     </div>
                 </div>
                 <div class="slider_toggles">
-                    <button class="slider_toggle">1</button>
-                    <button class="slider_toggle">2</button>
-                    <button class="slider_toggle">3</button>
+                    <button class="slider_toggle" type="button">1</button>
+                    <button class="slider_toggle" type="button">2</button>
+                    <button class="slider_toggle" type="button">3</button>
                 </div>
             </section>
 
@@ -94,30 +94,26 @@
                 <h2 class="visually-hidden">Информация о нашей веб-студии</h2>
                 <div class="info_block">
                     <div class="info_orders">
-                        <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
-                        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-                        <p>Выполняем заказы на разработку:</p>
+                        <h3 class="info_title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+                        <p class="info_text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                        <p class="info_text-list">Выполняем заказы на разработку:</p>
                         <ul>
                             <li>Веб-сайтов любой сложности</li>
                             <li>Мобильных приложений для iOS и Android</li>
                             <li>Слайдшоу и видео для корпоративных презентаций</li>
                         </ul>
                     </div>
-                    <div class="info_digital-table">
+                    <div class="info_digital-values">
                         <img class="info_image-nerds" src="#" width="360" height="208">
-                        <table>
-                            <caption>С 2004 года любим точность во всем:</caption>
-                            <tr>
-                                <th>146%</th>
-                                <th>100%</th>
-                                <th>50%</th>
-                            </tr>
-                            <tr>
-                                <td>Уровень самоотдачи</td>
-                                <td>Соблюдение сроков</td>
-                                <td>Минимальная предоплата</td>
-                            </tr>
-                        </table> 
+                        <h3 class="info_title-percentage-ratio">С 2004 года любим точность во всем:</h3>
+                        <dl class="info_list-percentage-radio">
+                            <dt class="info_percentage">146%</dt>
+                            <dd class="info_clarify">Уровеньсамоотдачи</dd>
+                            <dt class="info_percentage">100%</dt>
+                            <dd class="info_clarify">Соблюдение сроков</dd>
+                            <dt class="info_percentage">50%</dt>
+                            <dd class="info_clarify">Минимальная предоплата</dd>
+                        </dl>
                     </div>
                 </div>
             </section>
@@ -193,7 +189,8 @@
                 <label class="modal-windows_label" for="email-field">Ваш email:</label>
                 <input type="email" name="email" id="email-field" placeholder="email@example.com ">
                 <label class="modal-windows_label" for="message-field">Текст письма:</label>
-                <textarea id="message-field" placeholder="В свободной форме"></textarea>                
+                <textarea id="message-field" placeholder="В свободной форме"></textarea>
+                <button class="modal-windows_button-submit" type="submit">Отправить</button>
             </form>
         </div>
     </body>
