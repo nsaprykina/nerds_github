@@ -1,7 +1,24 @@
+@font-face {
+    font-family: ;
+}
+
 body {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
     background-color: rgb(160, 241, 160);
 }
 
 .client_link {
     opacity: 0.2;
+}
+
+.filter_layout-link {
+    opacity: 0.12;
+}
+
+.filter_layout-link:hover {
+    opacity: 1;
 }
