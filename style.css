@@ -1,4 +1,25 @@
-
+:root {
+    --white: rgba(255, 255, 255, 1);
+    --pale-white: rgba(219, 219, 219, 1);
+    --grey: rgba(225, 225, 225, 1);
+    --light-grey: rgba(215, 220, 222, 1);
+    --dark-grey: rgba(180, 185, 187, 1);
+    --grey-peace: rgba(238, 238, 238, 1);
+    --grey-hover: rgba(223, 223, 223, 1);
+    --grey-active: rgba(213, 213, 213, 1);
+    --gray: rgba(166, 166, 166, 1);
+    --red: rgba(251, 86, 90, 1);
+    --red-hover: rgba(231, 66, 70, 1);
+    --red-active: rgba(215, 55, 59, 1);
+    --rosy: rgba(251, 86, 90, 1);
+    --green: rgba(0, 202, 116, 1);
+    --green-hover: rgba(0, 188, 108, 1);
+    --green-active: rgba(0, 170, 98, 1);
+    --yellow: rgba(239, 200, 73, 1);
+    --yellow-hover: rgba(234, 181, 52, 1);
+    --yellow-active: rgba(229,167,34, 1);
+    --black: rgba(0, 0, 0, 1);
+}
 
 body {
     font-family: "Roboto", "Arial", sans-serif;
