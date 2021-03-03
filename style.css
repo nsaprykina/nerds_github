@@ -21,6 +21,33 @@
     --black: rgba(0, 0, 0, 1);
 }
 
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400; 
+    font-style: normal;
+    src: local("Roboto"),
+       url("fonts/Roboto-Regular.woff2") format("woff2"),
+       url("fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    src: local("Roboto"),
+      url("fonts/Roboto-Medium.woff2") format("woff2"),
+      url("font/Roboto-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    src: local("Roboto"),
+      url("fonts/Roboto-Bold.woff2") format("woff2"),
+      url("fonts/Roboto-Bold.woff") format("woff");
+}
+
 body {
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 400;
