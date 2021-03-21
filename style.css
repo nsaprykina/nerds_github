@@ -65,10 +65,10 @@ body {
     opacity: 1;
 }
 
-.filter_layout-link {
+.sample_picture-top {
     opacity: 0.12;
 }
 
-.filter_layout-link:hover {
-    opacity: 1;
+.sample_info {
+    background-color: var(--grey-peace);  
 }
