@@ -57,18 +57,18 @@ body {
     background-color: rgb(160, 241, 160);
 }
 
-.client_link {
+.client__link {
     opacity: 0.2;
 }
 
-.client_link:hover {
+.client__link:hover {
     opacity: 1;
 }
 
-.sample_picture-top {
+.sample__picture-top {
     opacity: 0.12;
 }
 
-.sample_info {
+.sample__info {
     background-color: var(--grey-peace);  
 }
