@@ -65,10 +65,10 @@ body {
     opacity: 1;
 }
 
-.sample__picture-top {
+.sample-project__picture-top {
     opacity: 0.12;
 }
 
-.sample__info {
+.sample-project__info {
     background-color: var(--grey-peace);  
 }
