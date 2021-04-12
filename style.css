@@ -54,7 +54,6 @@ body {
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
-    background-color: rgb(160, 241, 160);
 }
 
 .visually-hidden {
@@ -107,6 +106,12 @@ body {
     display: grid;
     grid-template-columns: 4fr 8fr;
     column-gap: 40px;
+}
+
+.social__link {
+    background: var(--grey);
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .modal-windows__close {
