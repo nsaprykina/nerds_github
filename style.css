@@ -57,12 +57,78 @@ body {
     background-color: rgb(160, 241, 160);
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.slider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.goods__list {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    column-gap: 40px;
+}
+
+.info__block {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    column-gap: 40px;
+}
+
 .client__link {
-    opacity: 0.2;
+    opacity: 0.2;    
 }
 
 .client__link:hover {
     opacity: 1;
+}
+
+.map {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    column-gap: 40px;
+}
+
+.modal-windows__close {
+    float: right;
+}
+
+.main__filter {
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+    column-gap: 140px;
+}
+
+.catalog__criterion {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+}
+
+.sample-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px 40px;
 }
 
 .sample-project__picture-top {
