@@ -69,7 +69,58 @@ body {
 
 .header {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: min-content 1fr max-content;
+}
+
+.header__link-logo--active:hover {
+    opacity: 0.7;
+}
+
+.header__link-logo--active:active {
+    opacity: 0.3;
+}
+
+.nav, 
+.basket {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.nav__item {    
+    list-style-type: none;
+}
+
+.nav__link, 
+.basket__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--black); 
+}
+
+.nav__link:hover, 
+.basket__link:hover {
+    color: var(--red);
+}
+
+.nav__link:active,
+.basket__link:active {
+    color: var(--black);
+    opacity: 0.3;
+}
+
+.nav__link--active {
+    color: var(--black);   
+    pointer-events: none;
+    cursor: default;
+    border-bottom: solid;
+    border-bottom-color: var(--red);
+    padding-bottom: 12px;
 }
 
 .slider {
