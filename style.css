@@ -89,7 +89,8 @@ body {
 
 .nav__list {
     display: flex;
-    justify-content: space-evenly;    
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .nav__item {    
@@ -140,8 +141,14 @@ body {
     column-gap: 40px;
 }
 
+.client__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .client__link {
-    opacity: 0.2;    
+    opacity: 0.2;     
 }
 
 .client__link:hover {
