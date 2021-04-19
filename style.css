@@ -1,5 +1,6 @@
 :root {
     --white: #ffffff;
+    --white-30: #ffffff4d;
     --pale-white: #dbdbdb;
     --grey: #e1e1e1;
     --light-grey: #d7dcde;
@@ -125,8 +126,51 @@ body {
 }
 
 .slider {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+}
+
+.slider__item {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 431px;
+    background-position: right;
+}
+
+.slider__item--background-1 {
+    background-image: url("image/nerds-index-slide1.png");    
+}
+
+.slider__item--background-2 {
+    background-image: url("image/nerds-index-slide2.png");
+}
+
+.slider__item--background-3 {
+    background-image: url("image/nerds-index-slide3.png");
+}
+
+.slider__link {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    background-color: var(--red);
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.slider__link:hover {
+    background-color: var(--red-hover);
+}
+
+.slider__link:active {
+    background-color: var(--red-active);
+    color: var(--white-30);
+}
+
+.slider__title {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
 }
 
 .goods__list {
