@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="header">
+        <header class="header wrapper">
             <div class="header__logo">
                 <a class="header__link-logo">
                     <svg width="160" height="66" viewBox="0 0 160 66" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +30,7 @@
                     </li>
                     <li class="nav__item">
                         <a class="nav__link" href="#">Контакты</a>
-                    </li>
+                    </li>                                   
                 </ul>
             </nav>
             <div class="header__basket basket">
@@ -40,33 +40,37 @@
 
         <main class="main">
             <h1 class="visually-hidden">Веб-студия "Нёрдс"</h1>
-            <section class="main__slider slider">
+            <section class="main__slider slider wrapper">
                 <h2 class="visually-hidden">Наши преимущества</h2>
-                <div class="slider__list">                
+                <div class="slider__list">
+                    <input class="slider__radio" name="slides" type="radio" checked data-slider="1px">
                     <div class="slider__item slider__item--background-1">                                   
                         <h3 class="slider__title">Долго, дорого, скрупулезно.</h3>
                         <p class="slider__info">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
                         <a class="slider__link link" href="#">Узнать больше</a>                                          
                     </div>
+                    <input class="slider__radio slider__radio--2" name="slides" type="radio" data-slider="2px">
                     <div class="slider__item slider__item--background-2">                   
                         <h3 class="slider__title">Любим математику как никто другой</h3>
                         <p class="slider__info">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                         <a class="slider__link link" href="#">Узнать больше</a>                        
                     </div>
+                    <input class="slider__radio slider__radio--3" name="slides" type="radio" data-slider="3px">
                     <div class="slider__item slider__item--background-3">                        
                         <h3 class="slider__title">Только ночь, только хардкор</h3>
                         <p class="slider__info">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                         <a class="slider__link link" href="#">Узнать больше</a>                        
                     </div>
                 </div>
-                <div class="slider__toggles">
-                    <button class="slider__toggle" type="button" aria-label="Первый слайдер">1</button>
+                
+                <!-- <div class="slider__toggles">
+                    <button class="slider__toggle slider__toggle--active" type="button" aria-label="Первый слайдер">1</button>
                     <button class="slider__toggle" type="button" aria-label="Второй слайдер">2</button>
                     <button class="slider__toggle" type="button" aria-label="Третий слайдер">3</button>
-                </div>
+                </div> -->
             </section>
 
-            <section class="main__goods goods">
+            <section class="main__goods goods wrapper">
                 <h2 class="visually-hidden">Наша продукция</h2>
                 <div class="goods__list">
                     <div class="goods__item">
@@ -87,7 +91,7 @@
                 </div>
             </section>
 
-            <section class="main__info info">
+            <section class="main__info info wrapper">
                 <h2 class="visually-hidden">Информация о нашей веб-студии</h2>
                 <div class="info__block">
                     <div class="info__orders">
@@ -118,7 +122,7 @@
                 </div>
             </section>
 
-            <section class="main__client client">
+            <section class="main__client client wrapper">
                 <h2 class="visually-hidden">Наши клиенты</h2>
                 <ul class="client__list">
                     <li class="client__item">
@@ -158,22 +162,24 @@
 
             <section class="main__map map">
                 <h2 class="visually-hidden">Где мы находимся</h2>
-                <div class="map__our-address">
-                    <h3 class="map__title">Nerds design studio</h3>
-                    <p class="map__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                    <p class="map__telephone">тел. +7 (812) 275-75-75</p>
-                    <button class="map__button button" type="button">Напишите нам</button>
-                </div>
-                <div class="map__coordinate">
-                    <picture>
-                        <source type="image/webp" srcset="image/marker-map-nerds-logo.webp 1x, image/marker-map-nerds-logo@2x.webp 2x">
-                        <img src="image/marker-map-nerds-logo.png" srcset="image/marker-map-nerds-logo@2x.png 2x" alt="Местоположение нашей компании на карте">
-                    </picture>
+                <div class="map__wrapper wrapper">
+                    <div class="map__our-address">
+                        <h3 class="map__title">Nerds design studio</h3>
+                        <p class="map__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                        <p class="map__telephone">тел. +7 (812) 275-75-75</p>
+                        <button class="map__button button" type="button">Напишите нам</button>
+                    </div>
+                    <div class="map__coordinate">
+                        <picture>
+                            <source type="image/webp" srcset="image/marker-map-nerds-logo.webp 1x, image/marker-map-nerds-logo@2x.webp 2x">
+                            <img src="image/marker-map-nerds-logo.png" srcset="image/marker-map-nerds-logo@2x.png 2x" alt="Местоположение нашей компании на карте">
+                        </picture>
+                    </div>
                 </div>
             </section>
         </main>
 
-        <footer class="footer">
+        <footer class="footer wrapper">
             <h2 class="visually-hidden">Наши контакты</h2>
             <div class="footer__social social">
                 <ul class="social__list">
