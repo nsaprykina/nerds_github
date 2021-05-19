@@ -96,7 +96,14 @@ p {
 
 .nav {
     margin-left: 200px;
-    margin-right: 245px;
+    margin-right: 136px;
+}
+
+.basket {
+    background-image: url(image/cart-icon.svg);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-position-y: center;
 }
 
 .nav, 
@@ -238,15 +245,11 @@ a.slider__link {
     border-radius: 3px;
 }
 
-.slider__link {
-    
-}
-
-.slider__link:hover {
+.link:hover {
     background-color: var(--red-hover);
 }
 
-.slider__link:active {
+.link:active {
     background-color: var(--red-active);
     color: var(--white-30);
 }
@@ -257,10 +260,66 @@ a.slider__link {
     font-weight: 500;
 }
 
+.goods {
+    margin-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid var(--grey-peace);
+}
+
 .goods__list {
     display: grid;
     grid-template-columns: repeat(3, 4fr);
     column-gap: 40px;
+}
+
+.goods__title {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    padding-top: 171px;
+}
+
+.goods__title--image-1 {
+    background-image: url(image/advantage-1.png);
+    background-repeat: no-repeat;
+}
+
+.goods__title--image-2 {
+    background-image: url(image/advantage-2.png);
+    background-repeat: no-repeat;
+}
+
+.goods__title--image-3 {
+    background-image: url(image/advantage-3.png);
+    background-repeat: no-repeat;
+}
+
+.goods__text {
+    width: 260px;
+    margin-bottom: 35px;
+}
+
+.goods__link--color-2 {
+    background-color: var(--green);
+}
+
+.goods__link--color-2:hover {
+    background-color: var(--green-hover);
+}
+
+.goods__link--color-2:active {
+    background-color: var(--green-active);
+}
+
+.goods__link--color-3 {
+    background-color: var(--yellow);
+}
+
+.goods__link--color-3:hover {
+    background-color: var(--yellow-hover);
+}
+
+.goods__link--color-3:active {
+    background-color: var(--yellow-active);
 }
 
 .info__block {
