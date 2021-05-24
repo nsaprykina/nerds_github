@@ -262,6 +262,7 @@ a.slider__link {
 
 .goods {
     margin-top: 80px;
+    padding: 0;
     padding-bottom: 80px;
     border-bottom: 2px solid var(--grey-peace);
 }
@@ -322,15 +323,75 @@ a.slider__link {
     background-color: var(--yellow-active);
 }
 
+.info {
+    padding: 73px 0 75px;
+}
+
 .info__block {
     display: grid;
     grid-template-columns: 8fr 4fr;
     column-gap: 40px;
 }
 
+.info__title {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.info__text {
+    width: 646px;
+    margin-bottom: 40px;
+}
+
+.info__title-list {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+.info__list {
+    list-style: none;
+    padding: 0;
+}
+
+.info__item--line {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+    width: 25px;
+    height: 2px;
+    background: var(--red);
+}
+
+.info__list-percentage-ratio {
+    margin: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+.info__percentage {
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: 700;
+}
+
+.info__clarifing {
+    margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
 .client {
     border-top: 2px solid var(--grey-peace);
     border-bottom: 2px solid var(--grey-peace);
+    padding: 0;
     padding-top: 46px;
     padding-bottom: 44px;
 }
