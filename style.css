@@ -233,7 +233,8 @@ a.slider__link {
     background-image: url("image/nerds-index-slide3.png");
 }
 
-.link {
+.link,
+.button {
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -243,13 +244,16 @@ a.slider__link {
     text-transform: uppercase;
     padding: 10px;
     border-radius: 3px;
+    border: 0;
 }
 
-.link:hover {
+.link:hover,
+.button:hover {
     background-color: var(--red-hover);
 }
 
-.link:active {
+.link:active,
+.button:active {
     background-color: var(--red-active);
     color: var(--white-30);
 }
@@ -417,9 +421,54 @@ a.slider__link {
     opacity: 0.1;
 }
 
+.map {
+    background: url(image/map.jpg) no-repeat center top;
+    margin: 80px auto 0;
+    height: 416px;
+    background-size: cover;
+}
+
 .map__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding-top: 60px;
+}
+
+.map__our-address {
+    width: 319px;
+    min-height: 308px;
+    background-color: var(--white);
+    padding: 49px 50px 47px;
+    box-sizing: border-box;
+}
+
+.map__title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.map__address {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.map__telephone {
+    margin-bottom: 40px;
+}
+
+.map__button {
+    padding: 16px 43px;
+}
+
+.map__coordinate {
+    position: absolute;
+    top: 90px;
+    right: 280px;
 }
 
 .footer {
