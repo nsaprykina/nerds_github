@@ -9,6 +9,7 @@
     --grey-hover: #dfdfdf;
     --grey-active: #d5d5d5;
     --gray: #a6a6a6;
+    --graphite: #444444;
     --red: #fb565a;
     --red-hover: #e74246;
     --red-active: #d7373b;
@@ -473,14 +474,61 @@ a.slider__link {
 
 .footer {
     display: grid;
-    grid-template-columns: 4fr 8fr;
-    column-gap: 40px;
+    grid-template-columns: 3fr 8fr;
+    column-gap: 140px;
+    align-items: center;
+    padding: 68px 0;
+}
+
+.social__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social__item {
+    background-color: var(--grey);
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    margin-right: 9px;
+    position: relative;
+}
+
+.social__item:hover {
+    background-color: var(--red-hover);
+    cursor: pointer;
+}
+
+.social__item:active {
+    background-color: var(--red-active);
+}
+
+.social__item:active .social__link {
+    opacity: 0.3;
 }
 
 .social__link {
-    background: var(--grey);
-    padding: 10px;
-    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10px;
+}
+
+.footer__title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer__text {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--graphite);
 }
 
 .modal-windows__close {
