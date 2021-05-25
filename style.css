@@ -75,6 +75,7 @@ body {
     padding: 0 40px;
 }
 
+h2,
 h3,
 p {
     margin: 0;
@@ -531,8 +532,45 @@ a.slider__link {
     color: var(--graphite);
 }
 
+.modal-windows {
+    width: 960px;
+    height: 590px;
+    margin: 0 auto;
+    padding: 63px 100px 84px;
+    box-sizing: border-box;
+    box-shadow: 0px 20px 40px #00000066;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-auto-rows: min-content max-content;
+    align-items: center;
+    row-gap: 37px;
+}
+
+.modal-windows__title {
+    font-size: 45px;
+    line-height: 52.73px;
+    font-weight: 700;    
+}
+
 .modal-windows__close {
     float: right;
+    width: 21px;
+    height: 21px;
+    background: var(--white);
+    border: 0;
+    margin-right: -11px;
+    background-image: url(image/close.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.modal-windows__close:hover {
+    opacity: 1;
+}
+
+.modal-windows__close:active {
+    opacity: 0.1;
 }
 
 .main__filter {
