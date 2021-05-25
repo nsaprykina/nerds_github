@@ -56,6 +56,7 @@ body {
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
+    box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -86,6 +87,10 @@ p {
     grid-template-columns: min-content 1fr max-content;
     align-items: center;
     background-color: var(--grey-peace);
+}
+
+.header__link-logo {
+    opacity: 1;
 }
 
 .header__link-logo--active:hover {
@@ -400,6 +405,7 @@ a.slider__link {
     padding: 0;
     padding-top: 46px;
     padding-bottom: 44px;
+    margin-bottom: 80px;
 }
 
 .client__list {
@@ -425,7 +431,7 @@ a.slider__link {
 
 .map {
     background: url(image/map.jpg) no-repeat center top;
-    margin: 80px auto 0;
+    margin: 60px auto 0;
     height: 416px;
     background-size: cover;
 }
@@ -573,10 +579,24 @@ a.slider__link {
     opacity: 0.1;
 }
 
+/* catalog.html */
+.main__title {    
+    padding: 72px 40px 108px;
+    background-color: var(--grey-peace);
+    text-align: center;
+}
+
+.main__title-page {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+}
+
 .main__filter {
     display: grid;
     grid-template-columns: 3fr 8fr;
     column-gap: 140px;
+    padding-top: 56px;
 }
 
 .catalog__criterion {

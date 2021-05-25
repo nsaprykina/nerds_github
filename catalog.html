@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="header">
+        <header class="header wrapper">
             <div class="header__logo">
                 <a class="header__link-logo header__link-logo--active" href="index.html">
                     <svg width="160" height="66" viewBox="0 0 160 66" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,8 +39,10 @@
         </header>
 
         <main class="main">
-            <h1 class="main__title">Магазин готовых шаблонов</h1>
-            <section class="main__filter">
+            <section class="main__title wrapper">
+                <h1 class="main__title-page">Магазин готовых шаблонов</h1>
+            </section>
+            <section class="main__filter wrapper">
                 <h2 class="visually-hidden">Наши услуги</h2>
                 <div class="main__service">
                     <form class="main__filter-form filter" action="#" method="POST">
@@ -216,22 +218,24 @@
 
             <section class="main__map map">
                 <h2 class="visually-hidden">Где мы находимся</h2>
-                <div class="map__our-address">
-                    <h3 class="map__title">Nerds design studio</h3>
-                    <p class="map__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                    <p class="map__telephone">тел. +7 (812) 275-75-75</p>
-                    <button class="map__button button">Напишите нам</button>
-                </div>
-                <div class="map__coordinate">
-                    <picture>
-                        <source type="image/webp" srcset="image/marker-map-nerds-logo.webp 1x, image/marker-map-nerds-logo@2x.webp 2x">
-                        <img src="image/marker-map-nerds-logo.png" srcset="image/marker-map-nerds-logo@2x.png 2x" alt="Местоположение нашей компании на карте">
-                    </picture>
+                <div class="map__wrapper wrapper">
+                    <div class="map__our-address">
+                        <h3 class="map__title">Nerds design studio</h3>
+                        <p class="map__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                        <p class="map__telephone">тел. +7 (812) 275-75-75</p>
+                        <button class="map__button button">Напишите нам</button>
+                    </div>
+                    <div class="map__coordinate">
+                        <picture>
+                            <source type="image/webp" srcset="image/marker-map-nerds-logo.webp 1x, image/marker-map-nerds-logo@2x.webp 2x">
+                            <img src="image/marker-map-nerds-logo.png" srcset="image/marker-map-nerds-logo@2x.png 2x" alt="Местоположение нашей компании на карте">
+                        </picture>
+                    </div>
                 </div>
             </section>
         </main>
 
-        <footer class="footer">
+        <footer class="footer wrapper">
             <div class="footer__social social">
                 <ul class="social__list">
                     <li class="social__item">
@@ -265,5 +269,19 @@
                 <p class="footer__text">Скидка 10% для друзей из социальных сетей.</p>
             </div>
         </footer>
+        
+        <div class="modal-windows">
+            <h2 class="modal-windows__title">Напишите нам</h2>
+            <button class="modal-windows__close" type="button" aria-label="Вернуться к странице"></button>
+            <form class="modal-windows__form form" action="#" method="POST">
+                <label class="form__label" for="name-field">Ваше имя:</label>
+                <input class="form__input" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+                <label class="form__label" for="email-field">Ваш email:</label>
+                <input class="form__input" type="email" name="email" id="email-field" placeholder="email@example.com ">
+                <label class="form__label" for="message-field">Текст письма:</label>
+                <textarea class="form__textarea" id="message-field" placeholder="В свободной форме"></textarea>
+                <button class="form__button button" type="submit" value="Отправить">
+            </form>
+        </div>
     </body>
 </html>
