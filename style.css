@@ -20,6 +20,7 @@
     --yellow: #efc849;
     --yellow-hover: #eab534;
     --yellow-active: #e5a722;
+    --black-active: #231f20;
     --black: #000000;
 }
 
@@ -599,9 +600,107 @@ a.slider__link {
     padding-top: 56px;
 }
 
+.filter fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.filter__legend {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.filter__range {
+}
+
 .catalog__criterion {
     display: grid;
     grid-template-columns: 1fr auto auto auto;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.catalog__title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.catalog__list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    column-gap: 25px;
+    margin-right: 47px;
+}
+
+.catalog__item {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--black);
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.catalog__item:hover {
+    opacity: 0.6;
+}
+
+.catalog__item:active,
+.catalog__item--active,
+.catalog__item--active:hover {
+    cursor: auto;
+    opacity: 1;
+}
+
+.catalog__button {
+    border: 0;
+    padding: 0;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.catalog__button--descending {
+    width: 0;
+    height: 0;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 11px solid var(--gray);
+    opacity: 0.2;
+    margin-right: 18px;
+}
+
+
+
+.catalog__button--ascending {
+    width: 0;
+    height: 0;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: 11px solid var(--gray);
+    opacity: 0.2;
+}
+
+.catalog__button:hover {
+    opacity: 1;
+}
+
+.catalog__button:active {
+    border-top-color: var(--black-active);
+    border-bottom-color: var(--black-active);
+}
+
+.catalog__button--active {
+    border-top-color: var(--black-active);
+    border-bottom-color: var(--black-active);
+    opacity: 1;
+    cursor: auto;
 }
 
 .sample-project {
