@@ -499,11 +499,8 @@ a.slider__link {
 
 .social__item {
     background-color: var(--grey);
-    width: 81px;
-    height: 81px;
     border-radius: 50%;
     margin-right: 9px;
-    position: relative;
 }
 
 .social__item:hover {
@@ -520,10 +517,13 @@ a.slider__link {
 }
 
 .social__link {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -10px;
+    display: flex;
+    width: 81px;
+    height: 81px;
+}
+
+.social__link svg {
+    margin: auto;
 }
 
 .footer__title {
@@ -709,22 +709,30 @@ a.slider__link {
     gap: 30px 40px;
 }
 
+.sample-project__item {
+    position: relative;
+}
+
+.sample-project__item:hover .sample-project__picture-top {
+    opacity: 1;
+}
+
+.sample-project__item:hover .sample-project__info {
+    display: block;
+}
+
 .sample-project__picture-top {
     background-color: var(--grey-top);
-    width: 360px;
-    height: 40px;
     opacity: 0.12;
 }
 
-.sample-project__list {
+.sample-project__list-circle {
     margin: 0;
-    padding: 0;
     list-style: none;
     display: grid;
     grid-template-columns: min-content min-content min-content;
     column-gap: 9px;
-    padding-top: 13px;
-    padding-left: 16px;
+    padding: 13px 16px;
 }
 
 .sample-project__item-circle {
@@ -734,16 +742,62 @@ a.slider__link {
     border-radius: 50%;
 }
 
-.sample-project__picture-bottom {
-    width: 360px;
-    height: 578px;
+.sample-project__picture-bottom picture {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.sample-project__picture-bottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .sample-project__info {
-    width: 360px;
-    height: 231px;
-    padding: 24px 80px 44px;    
+    padding: 24px 81px 44px;    
     background-color: var(--grey-peace);
     box-sizing: border-box;
-    text-align: center; 
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    display: none;
 }
+
+.sample-project__info--scope {
+    padding: 24px 60px 44px;
+}
+
+.sample-project__title-product {
+    margin-bottom: 12px;
+}
+
+.sample-project__title-link {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: var(--black);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.sample-project__title-link:hover {
+    color: var(--red);
+}
+
+.sample-project__title-link:active {
+    color: var(--black);
+    opacity: 0.3;
+}
+
+.sample-project__product-text {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.sample-project__button {
+    padding: 17px 65px;
+}
+
