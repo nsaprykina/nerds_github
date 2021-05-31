@@ -48,8 +48,10 @@
                     <form class="main__filter-form filter" action="#" method="POST">
                         <fieldset>
                             <legend class="filter__legend">Стоимость:</legend>
-                            <input class="filter__range" type="range" min="0" max="20000" value="15000">
-                            <p>от 0 до 15000</p>
+                            <div class="filter__background">
+                                <input class="filter__range" type="range" min="0" max="20000" value="15000">
+                            </div>
+                            <p>от <span class="filter__number">0</span> до <span class="filter__number">15000</span></p>
                         </fieldset>
                         <fieldset>
                             <legend class="filter__legend">Сетка:</legend>
@@ -288,7 +290,7 @@
                 <input class="form__input" type="email" name="email" id="email-field" placeholder="email@example.com ">
                 <label class="form__label" for="message-field">Текст письма:</label>
                 <textarea class="form__textarea" id="message-field" placeholder="В свободной форме"></textarea>
-                <button class="form__button button" type="submit" value="Отправить">
+                <button class="form__button button" type="submit">Отправить</button>
             </form>
         </div>
     </body>
