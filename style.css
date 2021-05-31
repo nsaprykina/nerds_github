@@ -3,6 +3,8 @@
     --white-30: #ffffff4d;
     --pale-white: #dbdbdb;
     --grey: #e1e1e1;
+    --grey-border: #dbdbdb;
+    --grey-box-shadow: #0001011a;
     --light-grey: #d7dcde;
     --dark-grey: #b4b9bb;
     --grey-peace: #eeeeee;
@@ -707,6 +709,7 @@ a.slider__link {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 30px 40px;
+    margin-bottom: 54px;
 }
 
 .sample-project__item {
@@ -801,3 +804,36 @@ a.slider__link {
     padding: 17px 65px;
 }
 
+.catalog__button-leat {
+    width: 50px;
+    height: 50px;
+    background-color: var(--grey-peace);
+    border: 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: var(--black);
+    border-radius: 3px;
+}
+
+.catalog__button-leat:hover {
+    background-color: var(--grey-hover);
+}
+
+.catalog__button-leat:active {
+    opacity: 0.3;
+    background-color: var(--grey-active);
+    box-shadow: inset 0px 3px 0px var(--grey-box-shadow);
+}
+
+.catalog__button-leat--active,
+.catalog__button-leat--active:hover,
+.catalog__button-leat--active:active {
+    background-color: var(--white);
+    border: 3px solid var(--grey-border);
+    color: var(--black);
+}
+
+.catalog__button-leat--forward {
+    width: 260px;
+}
