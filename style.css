@@ -3,6 +3,7 @@
     --white-30: #ffffff4d;
     --pale-white: #dbdbdb;
     --grey: #e1e1e1;
+    --grey-input: #283136;
     --grey-border: #dbdbdb;
     --grey-box-shadow: #0001011a;
     --light-grey: #d7dcde;
@@ -13,6 +14,7 @@
     --grey-top: #4d4d4d;
     --gray: #a6a6a6;
     --graphite: #444444;
+    --graphite-50: #44444480;
     --red: #fb565a;
     --red-hover: #e74246;
     --red-active: #d7373b;
@@ -93,7 +95,8 @@ p {
     background-color: var(--grey-peace);
 }
 
-.header__link-logo {
+.header__link-logo,
+.header__link-logo:focus {
     opacity: 1;
 }
 
@@ -115,6 +118,7 @@ p {
     background-repeat: no-repeat;
     padding-left: 30px;
     background-position-y: center;
+    cursor: pointer;
 }
 
 .nav, 
@@ -139,6 +143,8 @@ p {
 }
 
 .nav__link, 
+.basket__link,
+.nav__link:focus,
 .basket__link {
     text-decoration: none;
     text-transform: uppercase;
@@ -215,7 +221,8 @@ a.slider__link {
     margin-bottom: 100px;
 }
 
-.slider__radio:nth-of-type(2) {
+.slider__radio:nth-of-type(2),
+.slider__radio:nth-of-type(2):focus {
     margin-bottom: 100px;
 }
 
@@ -256,6 +263,7 @@ a.slider__link {
     padding: 10px;
     border-radius: 3px;
     border: 0;
+    cursor: pointer;
 }
 
 .link:hover,
@@ -544,16 +552,14 @@ a.slider__link {
 
 .modal-windows {
     width: 960px;
-    height: 590px;
     margin: 0 auto;
     padding: 63px 100px 84px;
     box-sizing: border-box;
     box-shadow: 0px 20px 40px #00000066;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-auto-rows: min-content max-content;
-    align-items: center;
-    row-gap: 37px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .modal-windows__title {
@@ -563,7 +569,6 @@ a.slider__link {
 }
 
 .modal-windows__close {
-    float: right;
     width: 21px;
     height: 21px;
     background: var(--white);
@@ -573,6 +578,9 @@ a.slider__link {
     background-repeat: no-repeat;
     cursor: pointer;
     opacity: 0.3;
+    position: absolute;
+    top: 80px;
+    right: 100px;
 }
 
 .modal-windows__close:hover {
@@ -581,6 +589,51 @@ a.slider__link {
 
 .modal-windows__close:active {
     opacity: 0.1;
+}
+
+.form__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    padding-bottom: 9px;
+}
+
+.form__label {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.form__input,
+.form__textarea {
+    width: -webkit-fill-available;
+    padding: 16px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    border: 2px solid var(--light-grey);
+    border-radius: 3px;
+    color: var(--graphite-50);
+}
+
+.form__input:hover,
+.form__textarea:hover {
+    border-color: var(--dark-grey);
+}
+
+.form__input:focus,
+.form__textarea:focus {
+    color: var(--graphite);
+    border-color: var(--black);
+}
+
+.form__textarea {
+    height: 145px;
+    margin-bottom: 47px;
+}
+
+.form__button {
+    padding: 17px 83px;
 }
 
 /* catalog.html */
@@ -603,10 +656,18 @@ a.slider__link {
     padding-top: 56px;
 }
 
+.filter {
+    box-sizing: border-box;
+}
+
 .filter fieldset {
     border: 0;
     margin: 0;
     padding: 0;
+}
+
+.filter fieldset:nth-of-type(2) {
+    margin-bottom: 43px;
 }
 
 .filter__legend {
@@ -629,12 +690,31 @@ a.slider__link {
     height: 2px;
 }
 
+.filter__numbers-range {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-bottom: 54px;
+}
+
 .filter__number {
     background-color: var(--grey-peace);
     width: 80px;
     height: 38px;
     border-radius: 3px;
     display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+    padding-top: 14px;
+}
+
+.filter__radio-block,
+.filter__checkbox-block {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--grey-input);
 }
 
 .catalog__criterion {
@@ -666,7 +746,6 @@ a.slider__link {
     font-weight: 400;
     color: var(--black);
     opacity: 0.3;
-    cursor: pointer;
 }
 
 .catalog__item:hover {
@@ -734,11 +813,13 @@ a.slider__link {
     position: relative;
 }
 
-.sample-project__item:hover .sample-project__picture-top {
+.sample-project__item:hover .sample-project__picture-top,
+.sample-project__item:focus .sample-project__picture-top {
     opacity: 1;
 }
 
-.sample-project__item:hover .sample-project__info {
+.sample-project__item:hover .sample-project__info,
+.sample-project__item:focus .sample-project__info {
     display: block;
 }
 

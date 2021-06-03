@@ -219,12 +219,20 @@
             <h2 class="modal-windows__title">Напишите нам</h2>
             <button class="modal-windows__close" type="button" aria-label="Вернуться к странице"></button>
             <form class="modal-windows__form form" action="#" method="POST">
-                <label class="form__label" for="name-field">Ваше имя:</label>
-                <input class="form__input" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-                <label class="form__label" for="email-field">Ваш email:</label>
-                <input class="form__input" type="email" name="email" id="email-field" placeholder="email@example.com ">
-                <label class="form__label" for="message-field">Текст письма:</label>
-                <textarea class="form__textarea" id="message-field" placeholder="В свободной форме"></textarea>
+                <div class="form__block">
+                    <div class="form__block-value">
+                        <label class="form__label" for="name-field">Ваше имя:</label>
+                        <input class="form__input" type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
+                    </div>
+                    <div class="form__block-value">
+                        <label class="form__label" for="email-field">Ваш email:</label>
+                        <input class="form__input" type="email" name="email" id="email-field" placeholder="email@example.com " required>
+                    </div>
+                </div>
+                <div class="form__block-message">
+                    <label class="form__label" for="message-field">Текст письма:</label>
+                    <textarea class="form__textarea" id="message-field" placeholder="В свободной форме"></textarea>
+                </div>
                 <button class="form__button button" type="submit">Отправить</button>
             </form>
         </div>

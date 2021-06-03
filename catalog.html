@@ -51,21 +51,40 @@
                             <div class="filter__background">
                                 <input class="filter__range" type="range" min="0" max="20000" value="15000">
                             </div>
-                            <p>от <span class="filter__number">0</span> до <span class="filter__number">15000</span></p>
+                            <div class="filter__numbers-range">
+                                <div class="filter__number-range">от <span class="filter__number">0</span></div> 
+                                <div class="filter__number-range">до <span class="filter__number">15000</span></div>
+                            </div>
                         </fieldset>
                         <fieldset>
                             <legend class="filter__legend">Сетка:</legend>
-                            <input class="filter__radio" type="radio" name="grid" value="adaptive" checked>Адаптивная
-                            <input class="filter__radio" type="radio" name="grid" value="fixed">Фиксированная
-                            <input class="filter__radio" type="radio" name="grid" value="rubbery">Резиновая
+                            <div class="filter__radio-block">
+                                <input class="filter__radio" type="radio" name="grid" value="adaptive" checked>Адаптивная
+                            </div>
+                            <div class="filter__radio-block">
+                                <input class="filter__radio" type="radio" name="grid" value="fixed">Фиксированная
+                            </div>
+                            <div class="filter__radio-block">
+                                <input class="filter__radio" type="radio" name="grid" value="rubbery">Резиновая
+                            </div>
                         </fieldset>
                         <fieldset>
                             <legend class="filter__legend">Особенности:</legend>
-                            <input class="filter__checkbox" type="checkbox" name="slide" value="slide" checked>Слайдер
-                            <input class="filter__checkbox" type="checkbox" name="advantages" value="advantages">Блок преимуществ
-                            <input class="filter__checkbox" type="checkbox" name="news" value="news" checked>Новости
-                            <input class="filter__checkbox" type="checkbox" name="gallery" value="gallery">Галерея
-                            <input class="filter__checkbox" type="checkbox" name="cart" value="cart">Корзина
+                            <div class="filter__checkbox-block">
+                                <input class="filter__checkbox" type="checkbox" name="slide" value="slide" checked>Слайдер
+                            </div>
+                            <div class="filter__checkbox-block">
+                                <input class="filter__checkbox" type="checkbox" name="advantages" value="advantages">Блок преимуществ
+                            </div>
+                            <div class="filter__checkbox-block">
+                                <input class="filter__checkbox" type="checkbox" name="news" value="news" checked>Новости
+                            </div>
+                            <div class="filter__checkbox-block">
+                                <input class="filter__checkbox" type="checkbox" name="gallery" value="gallery">Галерея
+                            </div>
+                            <div class="filter__checkbox-block">
+                                <input class="filter__checkbox" type="checkbox" name="cart" value="cart">Корзина
+                            </div>
                         </fieldset>
                         <input class="filter__submit" type="submit" value="Показать">
                     </form>
@@ -74,16 +93,16 @@
                     <div class="catalog__criterion">
                         <h3 class="catalog__title">Сортировать:</h3>
                         <ul class="catalog__list">
-                            <li class="catalog__item catalog__item--active">По цене</li>
-                            <li class="catalog__item">По типу</li>
-                            <li class="catalog__item">По названию</li>
+                            <li class="catalog__item catalog__item--active" tabindex="0">По цене</li>
+                            <li class="catalog__item" tabindex="0">По типу</li>
+                            <li class="catalog__item" tabindex="0">По названию</li>
                         </ul>
                         <button class="catalog__button catalog__button--descending catalog__button--active" type="button" aria-label="По убыванию"></button>
                         <button class="catalog__button catalog__button--ascending" type="button" aria-label="По возрастанию"></button>
                     </div>                      
                         
                     <div class="catalog__samples sample-project">
-                        <div class="sample-project__item">
+                        <div class="sample-project__item" tabindex="0">
                             <div class="sample-project__picture">
                                 <div class="sample-project__picture-top">
                                     <ul class="sample-project__list-circle">
@@ -105,7 +124,7 @@
                                 <button class="sample-project__button button" type="button">9 900 ₽</button>                                    
                             </div>                            
                         </div>
-                        <div class="sample-project__item">
+                        <div class="sample-project__item" tabindex="0">
                             <div class="sample-project__picture">
                                 <div class="sample-project__picture-top">
                                     <ul class="sample-project__list-circle">
@@ -127,7 +146,7 @@
                                 <button class="sample-project__button button" type="button">9 900 ₽</button>                                    
                             </div>                            
                         </div>
-                        <div class="sample-project__item">
+                        <div class="sample-project__item" tabindex="0">
                             <div class="sample-project__picture">
                                 <div class="sample-project__picture-top">
                                     <ul class="sample-project__list-circle">
@@ -149,7 +168,7 @@
                                 <button class="sample-project__button button" type="button">9 900 ₽</button>                                    
                             </div>                            
                         </div>
-                        <div class="sample-project__item">
+                        <div class="sample-project__item" tabindex="0">
                             <div class="sample-project__picture">
                                 <div class="sample-project__picture-top">
                                     <ul class="sample-project__list-circle">
@@ -171,7 +190,7 @@
                                 <button class="sample-project__button button" type="button">9 900 ₽</button>                                    
                             </div>                            
                         </div>
-                        <div class="sample-project__item">
+                        <div class="sample-project__item" tabindex="0">
                             <div class="sample-project__picture">
                                 <div class="sample-project__picture-top">
                                     <ul class="sample-project__list-circle">
@@ -193,7 +212,7 @@
                                 <button class="sample-project__button button" type="button">9 900 ₽</button>                                    
                             </div>                            
                         </div>
-                        <div class="sample-project__item">
+                        <div class="sample-project__item" tabindex="0">
                             <div class="sample-project__picture">
                                 <div class="sample-project__picture-top">
                                     <ul class="sample-project__list-circle">
@@ -284,12 +303,20 @@
             <h2 class="modal-windows__title">Напишите нам</h2>
             <button class="modal-windows__close" type="button" aria-label="Вернуться к странице"></button>
             <form class="modal-windows__form form" action="#" method="POST">
-                <label class="form__label" for="name-field">Ваше имя:</label>
-                <input class="form__input" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-                <label class="form__label" for="email-field">Ваш email:</label>
-                <input class="form__input" type="email" name="email" id="email-field" placeholder="email@example.com ">
-                <label class="form__label" for="message-field">Текст письма:</label>
-                <textarea class="form__textarea" id="message-field" placeholder="В свободной форме"></textarea>
+                <div class="form__block">
+                    <div class="form__block-value">
+                        <label class="form__label" for="name-field">Ваше имя:</label>
+                        <input class="form__input" type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
+                    </div>
+                    <div class="form__block-value">
+                        <label class="form__label" for="email-field">Ваш email:</label>
+                        <input class="form__input" type="email" name="email" id="email-field" placeholder="email@example.com " required>
+                    </div>
+                </div>
+                <div class="form__block-message">
+                    <label class="form__label" for="message-field">Текст письма:</label>
+                    <textarea class="form__textarea" id="message-field" placeholder="В свободной форме"></textarea>
+                </div>
                 <button class="form__button button" type="submit">Отправить</button>
             </form>
         </div>
