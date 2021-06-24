@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="header wrapper">
+        <header class="wrapper header">
             <div class="header__logo">
                 <a class="header__link-logo">
                     <svg width="160" height="66" viewBox="0 0 160 66" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,27 +20,27 @@
             <nav class="header__navigation nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a class="nav__link " href="#">Студия</a>
+                        <a class="nav__link link" href="#">Студия</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Клиенты</a>
+                        <a class="nav__link link" href="#">Клиенты</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="catalog.html">Магазин</a>
+                        <a class="nav__link link" href="catalog.html">Магазин</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Контакты</a>
+                        <a class="nav__link link" href="#">Контакты</a>
                     </li>                                   
                 </ul>
             </nav>
             <div class="header__basket basket">
-                <a class="basket__link" href="#">Корзина</a>
+                <a class="basket__link link" href="#">Корзина</a>
             </div>
         </header>
 
         <main class="main">
             <h1 class="visually-hidden">Веб-студия "Нёрдс"</h1>
-            <section class="main__slider slider wrapper">
+            <section class="wrapper main__slider slider">
                 <h2 class="visually-hidden">Наши преимущества</h2>
                 <div class="slider__list">
                     <input class="slider__radio" name="slides" type="radio" checked data-slider="1px">
@@ -70,7 +70,7 @@
                 </div> -->
             </section>
 
-            <section class="main__goods wrapper goods">
+            <section class="wrapper main__goods goods">
                 <h2 class="visually-hidden">Наша продукция</h2>
                 <div class="goods__list">
                     <div class="goods__item">
@@ -78,30 +78,30 @@
                         <p class="goods__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                         <a class="goods__link link" href="#">Заказать</a>
                     </div>
-                    <div class="goods__item goods__title--image-2">
-                        <h3 class="goods__title">Приложения</h3>
-                        <p class="goods__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+                    <div class="goods__item">
+                        <h3 class="goods__title goods__title--image-2">Приложения</h3>
+                        <p class="goods__text goods__text--content-2">Покорите топ-10 приложений в AppStore и Google Play</p>
                         <a class="goods__link goods__link--color-2 link" href="#">Заказать</a>
                     </div>
-                    <div class="goods__item goods__title--image-3">
-                        <h3 class="goods__title">Презентации</h3>
+                    <div class="goods__item">
+                        <h3 class="goods__title goods__title--image-3">Презентации</h3>
                         <p class="goods__text">Вы даже не подозреваете, насколько вы изумительны!</p>
                         <a class="goods__link goods__link--color-3 link" href="#">Заказать</a>
                     </div>                    
                 </div>
             </section>
 
-            <section class="main__info info wrapper">
+            <section class="wrapper main__info info">
                 <h2 class="visually-hidden">Информация о нашей веб-студии</h2>
                 <div class="info__block">
                     <div class="info__orders">
                         <h3 class="info__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
                         <p class="info__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-                        <h4 class="info__title--list">Выполняем заказы на разработку:</h4>
+                        <h4 class="info__title-list">Выполняем заказы на разработку:</h4>
                         <ul class="info__list">
-                            <li class="info__item"><span class="info__item--line"></span>Веб-сайтов любой сложности</li>
-                            <li class="info__item"><span class="info__item--line"></span>Мобильных приложений для iOS и Android</li>
-                            <li class="info__item"><span class="info__item--line"></span>Слайдшоу и видео для корпоративных презентаций</li>
+                            <li class="info__item"><span class="info__item-line"></span>Веб-сайтов любой сложности</li>
+                            <li class="info__item"><span class="info__item-line"></span>Мобильных приложений для iOS и Android</li>
+                            <li class="info__item"><span class="info__item-line"></span>Слайдшоу и видео для корпоративных презентаций</li>
                         </ul>
                     </div>
                     <div class="info__digital-values">
@@ -111,18 +111,18 @@
                         </picture>
                         <h4 class="info__title-percentage-ratio">С 2004 года любим точность во всем:</h4>
                         <dl class="info__list-percentage-ratio">
-                            <dt class="info__percentage">146%</dt>
+                            <dt class="info__percentage">146<span class="info__percentage-symbol">%</span></dt>
                             <dd class="info__clarifing">Уровень самоотдачи</dd>
-                            <dt class="info__percentage">100%</dt>
+                            <dt class="info__percentage">100<span class="info__percentage-symbol">%</span></dt>
                             <dd class="info__clarifing">Соблюдение сроков</dd>
-                            <dt class="info__percentage">50%</dt>
+                            <dt class="info__percentage">50<span class="info__percentage-symbol">%</span></dt>
                             <dd class="info__clarifing">Минимальная предоплата</dd>
                         </dl>
                     </div>
                 </div>
             </section>
 
-            <section class="main__client client wrapper">
+            <section class="wrapper main__client client">
                 <h2 class="visually-hidden">Наши клиенты</h2>
                 <ul class="client__list">
                     <li class="client__item">
@@ -157,29 +157,23 @@
                             </picture>
                         </a>
                     </li>
-                </ul>
+                </ul>                
             </section>
 
             <section class="main__map map">
                 <h2 class="visually-hidden">Где мы находимся</h2>
-                <div class="map__wrapper wrapper">
+                <div class="wrapper map__wrapper">
                     <div class="map__our-address">
                         <h3 class="map__title">Nerds design studio</h3>
                         <p class="map__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                         <p class="map__telephone">тел. +7 (812) 275-75-75</p>
                         <button class="map__button button" type="button">Напишите нам</button>
-                    </div>
-                    <div class="map__coordinate">
-                        <picture>
-                            <source type="image/webp" srcset="image/marker-map-nerds-logo.webp 1x, image/marker-map-nerds-logo@2x.webp 2x">
-                            <img src="image/marker-map-nerds-logo.png" srcset="image/marker-map-nerds-logo@2x.png 2x" alt="Местоположение нашей компании на карте">
-                        </picture>
-                    </div>
+                    </div>                    
                 </div>
             </section>
         </main>
 
-        <footer class="footer wrapper">
+        <footer class="wrapper footer">
             <h2 class="visually-hidden">Наши контакты</h2>
             <div class="footer__social social">
                 <ul class="social__list">
