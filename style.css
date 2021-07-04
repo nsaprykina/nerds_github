@@ -107,6 +107,7 @@ h1 {
     border-radius: 3px;
     color: var(--white);
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -633,6 +634,7 @@ h1 {
     background-color: var(--white);
     opacity: 0.3;
     border: 0;
+    cursor: pointer;
 }
 
 .modal-windows__close:hover {
@@ -767,6 +769,7 @@ h1 {
     background-color: var(--white);
     position: absolute;
     top: 30px;
+    cursor: pointer;
 }
 
 .filter__toggle--min {
@@ -795,6 +798,7 @@ h1 {
     height: 38px;
     margin-left: 10px;
     text-align: center;
+    cursor: pointer;
 }
 
 .filter__fieldset--radio {
@@ -807,7 +811,7 @@ h1 {
 }
 
 .filter__radio-input {
-    display: none;
+    opacity: 0;
 }
 
 .filter__radio-input:checked + label::after {
@@ -816,6 +820,10 @@ h1 {
     position: absolute;
     left: 0;
     cursor: pointer;
+}
+
+.filter__radio-input:checked:focus + label::after {
+    border: 1px solid var(--black);
 }
 
 .filter__radio-input:checked:hover + label::after {
@@ -828,6 +836,10 @@ h1 {
     position: absolute;
     left: 0;
     cursor: pointer;
+}
+
+.filter__radio-input:focus + label::before {
+    border: 1px solid var(--black);
 }
 
 .filter__radio-input:hover + label::before {
@@ -853,7 +865,7 @@ h1 {
 }
 
 .filter__checkbox-input {
-    display: none;
+    opacity: 0;
 }
 
 .filter__checkbox-input:checked + label::after {
@@ -862,6 +874,10 @@ h1 {
     position: absolute;
     left: 0;
     cursor: pointer;
+}
+
+.filter__checkbox-input:checked:focus + label::after {
+    border: 1px solid var(--black);
 }
 
 .filter__checkbox-input:checked:hover + label::after {
@@ -876,11 +892,16 @@ h1 {
     cursor: pointer;
 }
 
+.filter__checkbox-input:focus + label::before {
+    border: 1px solid var(--black);
+}
+
 .filter__checkbox-input:hover + label::before {
     opacity: 1;
 }
 
 .filter__checkbox-label {
+    cursor: pointer;
     margin-left: 36px;
 }
 
@@ -894,6 +915,7 @@ h1 {
     text-transform: uppercase;
     color: var(--black);
     background-color: var(--grey-peace);
+    cursor: pointer;
 }
 
 .filter__submit:hover {
@@ -1010,7 +1032,8 @@ h1 {
 
 .sample-project__item {
     position: relative;
-    height: 618px;    
+    height: 618px;
+    cursor: pointer;
 }
 
 .sample-project__item:hover {
@@ -1108,6 +1131,7 @@ h1 {
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .catalog__buttons-leat {
@@ -1126,6 +1150,7 @@ h1 {
     border-radius: 3px;
     margin-right: 6px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .catalog__button-leat:hover {
