@@ -46,47 +46,56 @@
                 <h2 class="visually-hidden">Наши услуги</h2>
                 <div class="main__service">
                     <form class="main__filter-form filter" action="#" method="POST">
-                        <fieldset>
+                        <fieldset class="filter__fieldset filter__fieldset--range">
                             <legend class="filter__legend">Стоимость:</legend>
-                            <div class="filter__background">
-                                <input class="filter__range" type="range" min="0" max="20000" value="15000">
+                            <div class="filter__range">
+                                <div class="filter__scale">
+                                    <div class="filter__bar"></div>
+                                </div>
+                                <div class="filter__toggle filter__toggle--min"></div>
+                                <div class="filter__toggle filter__toggle--max"></div>
                             </div>
-                            <div class="filter__numbers-range">
-                                <div class="filter__number-range">от <span class="filter__number">0</span></div> 
-                                <div class="filter__number-range">до <span class="filter__number">15000</span></div>
+                            <div class="filter__numbers">
+                                <lable class="filter__lable">От<input class="filter__input" type="number" value="0"></lable>
+                                <lable class="filter__lable">До<input class="filter__input" type="number" value="15000"></lable>
                             </div>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="filter__fieldset filter__fieldset--radio">
                             <legend class="filter__legend">Сетка:</legend>
                             <div class="filter__radio-block">
-                                <input class="filter__radio" type="radio" name="grid" value="adaptive" id="adaptive-field" checked>
+                                <input class="filter__radio-input" type="radio" name="grid" value="adaptive" id="adaptive-field" checked>
                                 <label class="filter__radio-label" for="adaptive-field">Адаптивная</label>
                             </div>
                             <div class="filter__radio-block">
-                                <input class="filter__radio" type="radio" name="grid" value="fixed" id="fixed-field">
+                                <input class="filter__radio-input" type="radio" name="grid" value="fixed" id="fixed-field">
                                 <label class="filter__radio-label" for="fixed-field">Фиксированная</label>
                             </div>
                             <div class="filter__radio-block">
-                                <input class="filter__radio" type="radio" name="grid" value="rubbery" id="rubbery-field">
+                                <input class="filter__radio-input" type="radio" name="grid" value="rubbery" id="rubbery-field">
                                 <label class="filter__radio-label" for="rubbery-field">Резиновая</label>
                             </div>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="filter__fieldset filter__fieldset--checkbox">
                             <legend class="filter__legend">Особенности:</legend>
                             <div class="filter__checkbox-block">
-                                <input class="filter__checkbox" type="checkbox" name="slide" value="slide" checked>Слайдер
+                                <input class="filter__checkbox-input" type="checkbox" name="slide" value="slide" id="slider-field" checked>
+                                <label class="filter__checkbox-label" for="slider-field">Слайдер</label>
                             </div>
                             <div class="filter__checkbox-block">
-                                <input class="filter__checkbox" type="checkbox" name="advantages" value="advantages">Блок преимуществ
+                                <input class="filter__checkbox-input" type="checkbox" name="advantages" value="advantages" id="advantages-field">
+                                <label class="filter__checkbox-label" for="advantages-field">Блок преимуществ</label>
                             </div>
                             <div class="filter__checkbox-block">
-                                <input class="filter__checkbox" type="checkbox" name="news" value="news" checked>Новости
+                                <input class="filter__checkbox-input" type="checkbox" name="news" value="news" id="news-field" checked>
+                                <label class="filter__checkbox-label" for="news-field">Новости</label>
                             </div>
                             <div class="filter__checkbox-block">
-                                <input class="filter__checkbox" type="checkbox" name="gallery" value="gallery">Галерея
+                                <input class="filter__checkbox-input" type="checkbox" name="gallery" value="gallery" id="gallery-field">
+                                <label class="filter__checkbox-label" for="gallery-field">Галерея</label>
                             </div>
                             <div class="filter__checkbox-block">
-                                <input class="filter__checkbox" type="checkbox" name="cart" value="cart">Корзина
+                                <input class="filter__checkbox-input" type="checkbox" name="cart" value="cart" id="cart-field">
+                                <label class="filter__checkbox-label" for="cart-field">Корзина</label>
                             </div>
                         </fieldset>
                         <input class="filter__submit" type="submit" value="Показать">
